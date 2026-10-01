@@ -48,7 +48,8 @@ Open <http://127.0.0.1:8000/products/> to view the site. The admin site is avail
 ## Notes and Assumptions
 
 - The project uses SQLite by default. `python manage.py migrate` creates `db.sqlite3` locally.
-- The project also has a data migration additionally to seed the tables with initial data, so that when running the app for the first time, it will be easier to test the functionality without adding more data through the admin interface.
+- The project also has a data migration additionally to seed the tables with initial data(5 categories, 10 tags and 20 products), so that when running the app for the first time, it will be easier to test the functionality without adding more data through the admin interface. More data can be added through the admin interface, if required.
+-  `db.sqlite3` file is not commited as it’s local, mutable database state and can become stale or conflict with migrations.
 - the committed migrations, including the sample-data migration, are the source of truth for recreating the database.
 - This is a local development setup. The checked-in Django settings enable debug mode and use a development secret key.
 - The filters on both tags and categories support multiple selection.

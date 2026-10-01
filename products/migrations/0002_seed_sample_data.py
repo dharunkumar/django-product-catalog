@@ -3,8 +3,25 @@
 from django.db import migrations
 
 # categories, tags, and products to be seeded
-categories_data = [ 'Electronics', 'Clothing', 'Books' ]
-tags_data = [ 'New', 'Sale', 'Popular' ]
+categories_data = [
+    'Electronics',
+    'Clothing',
+    'Books',
+    'Home & Kitchen',
+    'Sports & Outdoors',
+]
+tags_data = [
+    'New',
+    'Sale',
+    'Popular',
+    'Featured',
+    'Wireless',
+    'Eco-Friendly',
+    'Bestseller',
+    'Limited Edition',
+    'Lightweight',
+    'Waterproof',
+]
 products_data = [
     {
         'name': 'Smartphone',
@@ -26,7 +43,126 @@ products_data = [
         'price': 14.99,
         'category': 'Books',
         'tags': []
-    }
+    },
+    {
+        'name': 'Bluetooth Speaker',
+        'description': 'A portable speaker with clear, powerful sound.',
+        'price': 59.99,
+        'category': 'Electronics',
+        'tags': ['Wireless', 'Popular']
+    },
+    {
+        'name': 'Running Shoes',
+        'description': 'Lightweight shoes designed for daily running.',
+        'price': 89.99,
+        'category': 'Sports & Outdoors',
+        'tags': ['Lightweight', 'Featured']
+    },
+    {
+        'name': 'Insulated Water Bottle',
+        'description': 'A reusable bottle that keeps drinks cold or hot.',
+        'price': 24.99,
+        'category': 'Sports & Outdoors',
+        'tags': ['Eco-Friendly', 'Waterproof']
+    },
+    {
+        'name': 'Cookbook',
+        'description': 'A collection of simple recipes for home cooks.',
+        'price': 22.50,
+        'category': 'Books',
+        'tags': ['Bestseller', 'Featured']
+    },
+    {
+        'name': 'Cotton Hoodie',
+        'description': 'A soft cotton hoodie for everyday wear.',
+        'price': 44.00,
+        'category': 'Clothing',
+        'tags': ['New', 'Sale']
+    },
+    {
+        'name': 'Wireless Mouse',
+        'description': 'A compact wireless mouse for work and travel.',
+        'price': 27.99,
+        'category': 'Electronics',
+        'tags': ['Wireless', 'Lightweight']
+    },
+    {
+        'name': 'Ceramic Mug Set',
+        'description': 'A set of four durable ceramic mugs.',
+        'price': 31.99,
+        'category': 'Home & Kitchen',
+        'tags': ['Popular', 'Limited Edition']
+    },
+    {
+        'name': 'Yoga Mat',
+        'description': 'A non-slip mat for yoga and floor exercises.',
+        'price': 35.00,
+        'category': 'Sports & Outdoors',
+        'tags': ['Eco-Friendly', 'New']
+    },
+    {
+        'name': 'Desk Organizer',
+        'description': 'A compact organizer for a tidy workspace.',
+        'price': 18.75,
+        'category': 'Home & Kitchen',
+        'tags': ['Sale', 'Featured']
+    },
+    {
+        'name': 'Travel Backpack',
+        'description': 'A lightweight backpack with water-resistant fabric.',
+        'price': 64.99,
+        'category': 'Sports & Outdoors',
+        'tags': ['Lightweight', 'Waterproof']
+    },
+    {
+        'name': 'Table Lamp',
+        'description': 'A modern lamp for desks and bedside tables.',
+        'price': 39.99,
+        'category': 'Home & Kitchen',
+        'tags': ['New', 'Popular']
+    },
+    {
+        'name': 'Mystery Novel',
+        'description': 'A page-turning mystery set in a coastal town.',
+        'price': 16.99,
+        'category': 'Books',
+        'tags': ['Bestseller', 'Limited Edition']
+    },
+    {
+        'name': 'Wireless Earbuds',
+        'description': 'Compact earbuds with a rechargeable charging case.',
+        'price': 74.99,
+        'category': 'Electronics',
+        'tags': ['Wireless', 'New', 'Featured']
+    },
+    {
+        'name': 'Stainless Steel Pan',
+        'description': 'A versatile pan for everyday cooking.',
+        'price': 42.00,
+        'category': 'Home & Kitchen',
+        'tags': ['Popular', 'Sale']
+    },
+    {
+        'name': 'Trail Running Jacket',
+        'description': 'A packable jacket for changing outdoor weather.',
+        'price': 95.00,
+        'category': 'Clothing',
+        'tags': ['Waterproof', 'Lightweight']
+    },
+    {
+        'name': 'Reusable Lunch Box',
+        'description': 'A leak-resistant lunch box for meals on the go.',
+        'price': 21.50,
+        'category': 'Home & Kitchen',
+        'tags': ['Eco-Friendly', 'Waterproof']
+    },
+    {
+        'name': 'Classic Wristwatch',
+        'description': 'A simple everyday watch with a stainless steel band.',
+        'price': 119.00,
+        'category': 'Clothing',
+        'tags': ['Limited Edition', 'Featured']
+    },
 ]
 
 def seed_sample_data(apps, schema_editor):
