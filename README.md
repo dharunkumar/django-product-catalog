@@ -45,6 +45,13 @@ python manage.py runserver
 
 Open <http://127.0.0.1:8000/products/> to view the site. The admin site is available at <http://127.0.0.1:8000/admin/>. To create an admin login, run `python manage.py createsuperuser` and follow the prompts.
 
+## Test
+Added some trivial testcases to test the functionality, to run these tests:
+
+```
+python manage.py test products
+```
+
 ## Notes and Assumptions
 
 - The project uses SQLite by default. `python manage.py migrate` creates `db.sqlite3` locally.
