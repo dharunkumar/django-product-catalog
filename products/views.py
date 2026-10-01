@@ -1,12 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 from .models import Category, Tag, Product
 
-# Create your views here.
-
-def index(request):
-    return HttpResponse("Hello, world. You're at the products index.")
 
 def product_list(request):
     # Base queryset for products, using select_related for category 
@@ -26,7 +21,8 @@ def product_list(request):
     if tag_filters:
         products = products.filter(tags__name__in=tag_filters)
 
-    products = products.distinct()  # Ensure distinct results when filtering by tags
+    # Ensure distinct results when filtering by tags
+    products = products.distinct()
 
     product_data = {
         'products': products,
