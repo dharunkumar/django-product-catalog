@@ -13,7 +13,7 @@ Open a terminal in the project directory (the directory containing `manage.py`).
 
 Windows:
 ```
-python -3.12 -m venv .venv
+python3 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 Mac or Linux:
@@ -56,4 +56,4 @@ Open <http://127.0.0.1:8000/products/> to view the site. The admin site is avail
 
 ## AI usage:
 - AI assistance was used to outline and format the project setup instructions and markdown structure in `README.md` and subsequently modified my me to match the project's functionality and assumptions. 
-- An AI assistant was utilized to generate the initial HTML boilerplate `product_list.html` and further changed by me to reflect the API structure, query string parameters and added additional functionality.
+- AI assistance was utilized to generate the initial HTML boilerplate `product_list.html` and further changed by me to reflect the API structure, query string parameters and added additional functionality.
